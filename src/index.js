@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function addTask(event) {
     event.preventDefault();
     let newTaskText = event.new-task-description.value;
-    let taskList = event.list
+    let taskList = document.getElementById("tasks")
     let newTaskItem = document.createElement('li');
     newTaskItem.innerText = newTaskText
     taskList.append(newTaskItem);
